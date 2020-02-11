@@ -21,7 +21,7 @@ document.addEventListener('keydown', e => {
 
 function playNote(key) {
   const noteAudio = document.getElementById(key.dataset.note)
-  noteAudio.currentTime = 0
+  noteAudio.currentTime = 0/*sets or returns the current position (in seconds) of the audio*/
   noteAudio.play()
   key.classList.add('active')
   noteAudio.addEventListener('ended', () => {
